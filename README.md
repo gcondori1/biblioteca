@@ -6,7 +6,7 @@ alguna descripcion del sistema
 
 ## Diagrama de Clases
 
-![alt text](https://miro.medium.com/max/10000/0*wZAcNrIWFFjuJA78)
+![alt text](https://github.com/gcondori1/biblioteca/blob/release-1.0/Repositories/Diagram/Diagrama%20de%20clases.png)
 
 ## Estructura del proyecto
 
