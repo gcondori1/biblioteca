@@ -8,7 +8,13 @@ namespace Repositories.Entities
     {
         private string isbn;
         private string autor;
+        private int id;
 
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
         public string Autor
         {
             get { return autor; }

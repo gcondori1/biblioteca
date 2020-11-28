@@ -6,11 +6,22 @@ namespace Repositories.Entities
 {
     public abstract class Socio
     {
-        private int idSocio;
+        private int id;
+        private int numeroSocio;
         private string nombre;
         private string apellido;
         private int maxCantidad;
 
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        public int NumeroSocio
+        {
+            get { return numeroSocio; }
+            set { numeroSocio = value; }
+        }
         public int MaxCantidad
         {
             get { return maxCantidad; }
@@ -25,12 +36,7 @@ namespace Repositories.Entities
         {
             get { return nombre; }
             set { nombre = value; }
-        }
-        public int IdSocio
-        {
-            get { return idSocio; }
-            set { idSocio = value; }
-        }
+        } 
 
         public abstract bool isCupoDisponible();
 

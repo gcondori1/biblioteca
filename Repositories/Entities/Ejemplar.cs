@@ -6,9 +6,15 @@ namespace Repositories.Entities
 {
     public class Ejemplar
     {
+        private int id;
         private int numeroEdicion;
         private string ubicacion;
 
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
         public int NumeroEdicion
         {
             get { return numeroEdicion; }
