@@ -7,3 +7,4 @@ C:\Users\grn-1\source\repos\examen-ingreso\App\obj\Debug\App.csproj.GenerateReso
 C:\Users\grn-1\source\repos\examen-ingreso\App\obj\Debug\App.csproj.CoreCompileInputs.cache
 C:\Users\grn-1\source\repos\examen-ingreso\App\obj\Debug\App.exe
 C:\Users\grn-1\source\repos\examen-ingreso\App\obj\Debug\App.pdb
+C:\Users\grn-1\source\repos\examen-ingreso\App\obj\Debug\examen_ingreso.Forms.Home.resources

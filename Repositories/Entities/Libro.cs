@@ -8,15 +8,8 @@ namespace Repositories.Entities
     {
         private string isbn;
         private string autor;
-        private List<Ejemplar> ejemplares;
 
-        public List<Ejemplar> Ejemplares
-        {
-            get { return ejemplares; }
-            set { ejemplares = value; }
-        }
-
-        public string MyProperty
+        public string Autor
         {
             get { return autor; }
             set { autor = value; }
