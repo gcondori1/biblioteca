@@ -26,6 +26,11 @@ namespace Repositories.Entities
             get { return isbn; }
             set { isbn = value; }
         }
-
+        public bool isEjemplares(int libroId)
+        {
+            Repositories.EjemplarRepository ejemplardb = new Repositories.EjemplarRepository();
+            List<Ejemplar> ejemplares = ejemplardb.getEntitiesByFilters($"libroId = {libroId}");
+            return true;
+        }
     }
 }

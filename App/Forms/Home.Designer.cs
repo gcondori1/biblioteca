@@ -37,6 +37,7 @@
             this.lblSocio = new System.Windows.Forms.Label();
             this.btnDevolver = new System.Windows.Forms.Button();
             this.btnSolicitarPrestamo = new System.Windows.Forms.Button();
+            this.cbSocio = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGridPrestamos)).BeginInit();
             this.SuspendLayout();
@@ -128,6 +129,7 @@
             this.btnDevolver.TabIndex = 9;
             this.btnDevolver.Text = "Devolver";
             this.btnDevolver.UseVisualStyleBackColor = false;
+            this.btnDevolver.Click += new System.EventHandler(this.btnDevolver_Click);
             // 
             // btnSolicitarPrestamo
             // 
@@ -143,6 +145,15 @@
             this.btnSolicitarPrestamo.TabIndex = 10;
             this.btnSolicitarPrestamo.Text = "Solicitar prestamo de libro";
             this.btnSolicitarPrestamo.UseVisualStyleBackColor = false;
+            this.btnSolicitarPrestamo.Click += new System.EventHandler(this.btnSolicitarPrestamo_Click);
+            // 
+            // cbSocio
+            // 
+            this.cbSocio.FormattingEnabled = true;
+            this.cbSocio.Location = new System.Drawing.Point(491, 78);
+            this.cbSocio.Name = "cbSocio";
+            this.cbSocio.Size = new System.Drawing.Size(88, 21);
+            this.cbSocio.TabIndex = 11;
             // 
             // Home
             // 
@@ -150,6 +161,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(591, 453);
+            this.Controls.Add(this.cbSocio);
             this.Controls.Add(this.btnSolicitarPrestamo);
             this.Controls.Add(this.btnDevolver);
             this.Controls.Add(this.lblSocio);
@@ -180,5 +192,6 @@
         private System.Windows.Forms.Label lblSocio;
         private System.Windows.Forms.Button btnDevolver;
         private System.Windows.Forms.Button btnSolicitarPrestamo;
+        private System.Windows.Forms.ComboBox cbSocio;
     }
 }

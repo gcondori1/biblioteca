@@ -12,9 +12,14 @@ namespace App.Forms
 {
     public partial class SolicitudLibro : Form
     {
-        public SolicitudLibro()
+        public SolicitudLibro(int socioId)
         {
             InitializeComponent();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

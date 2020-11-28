@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Repositories.Repositories
 {
-    class SocioRepository : IRepository<Socio>
+    public class SocioRepository : IRepository<Socio>
     {
         public void create(Socio entity)
         {
@@ -17,9 +17,19 @@ namespace Repositories.Repositories
             throw new NotImplementedException();
         }
 
-        public Socio getEntityById(int id)
+        public List<Socio> getEntitiesByFilters(string filter)
         {
             throw new NotImplementedException();
+        }
+
+        public Socio getEntityById(int id)
+        {
+            // mock Socio
+            Socio socio = new SocioComun()
+            {
+                Id = id
+            };
+            return socio;
         }
 
         public void remove(Socio entity)

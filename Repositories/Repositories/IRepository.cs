@@ -4,10 +4,11 @@ using System.Text;
 
 namespace Repositories.Repositories
 {
-    interface IRepository<T>
+    public interface IRepository<T>
     {
         List<T> getEntities();
         T getEntityById(int id);
+        List<T> getEntitiesByFilters(string filter);
         void create(T entity);
         void remove(T entity);
     }

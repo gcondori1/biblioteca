@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Repositories.Repositories
 {
-    class EjemplarRepository : IRepository<Ejemplar>
+    public class EjemplarRepository : IRepository<Ejemplar>
     {
         public void create(Ejemplar entity)
         {
@@ -13,6 +13,11 @@ namespace Repositories.Repositories
         }
 
         public List<Ejemplar> getEntities()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Ejemplar> getEntitiesByFilters(string filter)
         {
             throw new NotImplementedException();
         }
