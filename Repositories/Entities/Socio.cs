@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Repositories.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -38,7 +39,7 @@ namespace Repositories.Entities
             set { nombre = value; }
         } 
 
-        public abstract bool isCupoDisponible();
+        public abstract bool isCupoDisponible(PrestamoRepository prestamoDb);
 
     }
 }

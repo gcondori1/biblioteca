@@ -7,6 +7,8 @@ namespace Repositories.Repositories
 {
     public class SocioRepository : IRepository<Socio>
     {
+        Socio socio;
+
         public void create(Socio entity)
         {
             throw new NotImplementedException();
@@ -24,15 +26,16 @@ namespace Repositories.Repositories
 
         public Socio getEntityById(int id)
         {
-            // mock Socio
-            Socio socio = new SocioComun()
-            {
-                Id = id
-            };
+            // Mock Socios
+            if (id == 1)
+                socio = new SocioComun(id, "Juan", "Comun");
+            else 
+                socio = new SocioVip(id, "Pepe", "Vip", 100);
+            
             return socio;
         }
 
-        public void remove(Socio entity)
+        public void removeById(int id)
         {
             throw new NotImplementedException();
         }

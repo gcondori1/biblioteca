@@ -6,9 +6,18 @@ namespace Repositories.Entities
 {
     public class Libro
     {
+        private int id;
         private string isbn;
         private string autor;
-        private int id;
+        private bool isEjemplaresDisponibles;
+
+        public Libro(int id, string isbn, string autor, bool isEjemplaresDisponibles)
+        {
+            this.id = id;
+            this.isbn = isbn;
+            this.autor = autor;
+            this.IsEjemplaresDisponibles = isEjemplaresDisponibles;
+        }
 
         public int Id
         {
@@ -26,11 +35,14 @@ namespace Repositories.Entities
             get { return isbn; }
             set { isbn = value; }
         }
-        public bool isEjemplares(int libroId)
+        public bool IsEjemplaresDisponibles
         {
-            Repositories.EjemplarRepository ejemplardb = new Repositories.EjemplarRepository();
-            List<Ejemplar> ejemplares = ejemplardb.getEntitiesByFilters($"libroId = {libroId}");
-            return true;
+            get { return isEjemplaresDisponibles; }
+            set { isEjemplaresDisponibles = value; }
+        }
+        public bool isEjemplares()
+        {
+            return IsEjemplaresDisponibles;
         }
     }
 }

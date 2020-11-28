@@ -154,6 +154,7 @@
             this.cbSocio.Name = "cbSocio";
             this.cbSocio.Size = new System.Drawing.Size(88, 21);
             this.cbSocio.TabIndex = 11;
+            this.cbSocio.SelectedIndexChanged += new System.EventHandler(this.cbSocio_SelectedIndexChanged);
             // 
             // Home
             // 

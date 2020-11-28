@@ -10,6 +10,6 @@ namespace Repositories.Repositories
         T getEntityById(int id);
         List<T> getEntitiesByFilters(string filter);
         void create(T entity);
-        void remove(T entity);
+        void removeById(int id);
     }
 }

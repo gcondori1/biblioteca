@@ -9,6 +9,15 @@ namespace Repositories.Entities
         private int id;
         private int numeroEdicion;
         private string ubicacion;
+        private int libroId;
+
+        public Ejemplar(int id, int numeroEdicion, string ubicacion, int libroId)
+        {
+            this.id = id;
+            this.numeroEdicion = numeroEdicion;
+            this.ubicacion = ubicacion;
+            this.libroId = libroId;
+        }
 
         public int Id
         {
@@ -26,5 +35,12 @@ namespace Repositories.Entities
             get { return ubicacion; }
             set { ubicacion = value; }
         }
+
+        public int LibroId
+        {
+            get { return libroId; }
+            set { libroId = value; }
+        }
+
     }
 }
